@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(129, 201, 151);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: auto;
+  }
+  .menu {
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .home {
+    color: rgb(14, 177, 63);
+    margin-right: 50px;
+  }
+  .wines {
+    color: rgb(14, 177, 63);
+    margin-right: 40px;
+  }
+  
+  .home:hover {
+    color: rgb(245, 238, 240);
+  }
+  .wines:hover {
+    color: rgb(245, 238, 240);
+  }
+  
+  .assortiment {
+      width: 300px;
+      height: 70px;
+      background-color: azure;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      align-items: baseline;
+      margin: 0px 0px 0px 1030px;
+      display: none;
+  }
+
+.mySlides {
+    width: 50%;
+}
+  
