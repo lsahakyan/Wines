@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,10 @@
         
         <a href = "#home" class = "home">Home </a>
         <a href = "#wineSelect" class = "wines">Wine Sortiment
-        <!--<select id = "wineSelect">
+        <select id = "wineSelect">
             <optgroup label="Red wine">Red wine</optgroup>
             <optgroup label ="White wine">White Wine</optgroup>
-        </select>-->
+        </select>
         </a> 
         
         
@@ -36,14 +36,159 @@
       </section>
 
 
-      
-</div>
+      </div>
 
+
+<section id="ej">
+    <div class = "meal-search-box">
+        <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+        <button type = "submit" class = "search-btn btn" id = "search-btn">
+          <i class = "fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+</section>
+<div class = "meal-result">
+    <h2 class = "title">Your Search Results:</h2>
+    <div id= "meal">
+    </div>
+  </div>
 
   
 
 
 
  <script src="js/API.js"></script>   
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "CSS/style.css">
+</head>
+<body>
+  
+  <div class = "container">
+
+    <nav class="menu"> 
+        
+
+        
+        <a href = "#home" class = "home">Home </a>
+        <a href = "#wineWrapper" class = "wines">Find Your Wine
+        <!--<select id = "wineSelect">
+            <optgroup label="Red wine">Red wine</optgroup>
+            <optgroup label ="White wine">White Wine</optgroup>
+        </select>-->
+        </a> 
+        
+        
+       
+      
+    </nav>
+
+   <!-- <div class = "assortiment">
+        <a href = "#" class = "redWine">Red wine</a>
+        <a href = "#" class = "whiteWine">White wine</a>
+       </div>-->
+       <div class="Info-Slider-Text">
+       
+        <img class="mySlides" src="Images/wines-gb1c5ae0b8_1920.jpg">
+        <img class="mySlides" src="Images/restaurant-g76fda9284_1920.jpg">
+        <img class="mySlides" src="Images/grapes-ga0ec8ef4d_1920.jpg">
+      
+      <div class="textOfInfo">
+      <h2 class = "Info-Title">Tasting Wine</h2>
+      <p class = "Info-Text">There’s no right way or wrong way to taste wine. It’s this simple — do you like what you’re drinking or do you not like what you’re drinking? That said, there’s a formal way to taste wine that reveals more about the wine in your glass, even before you start drinking. 
+          <br> Here at VinePair, we understand that this method of tasting can be intimidating, so we’re going to break it down for you, leaving you feeling comfortable and confident if you wish to use this method.
+    </p>
+    </div>
+      
+      </div>
+      
+
+      
+       
+     
+      
+      
+
+
+    <section id="ej">
+   
+
+    
+
+
+
+    <div class = "wine-wrapper" id="wineWrapper">
+      <div class = "wine-search">
+        <h2 class = "title">Find Wines For Special Days</h2>
+        <blockquote>“One should always be drunk. That's all that matters...But with what? With wine, with poetry, or with virtue, as you chose. But get drunk.”<br>
+          <cite>- Paulo Coelho, Brida</cite>
+        </blockquote>
+
+        <div class = "wine-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter Prefered Wine" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "wine-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "wine">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class = "wine-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn wine-close-btn" id = "wine-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "wine-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+  <script src = "js/script.js"></script>
 </body>
 </html>
