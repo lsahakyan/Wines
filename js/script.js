@@ -111,8 +111,8 @@ function getWineList(){
         if(data.recommendedWines){
             data.recommendedWines.forEach(recommendedWines => {
                 html += `
-                    <div class = "meal-item" data-id = "${recommendedWines.id}">
-                        <div class = "meal-img">
+                    <div class = "wine-item" data-id = "${recommendedWines.id}">
+                        <div class = "wine-img">
                             <img src = "${recommendedWines.imageUrl}" alt = "food">
                         </div>
                         <div class = "wine-name">
